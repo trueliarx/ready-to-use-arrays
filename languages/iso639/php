@@ -1,0 +1,283 @@
+<?php
+/*
+php arrays with iso639 iso codes
+right to left languages
+left to right languages
+ancient languages
+*/
+
+// right to left languages
+$rtl_languages = array(
+    'ar',   // Arabic
+    'he',   // Hebrew
+    'ps',   // Pashto
+    'fa',   // Persian (Farsi)
+    'ku',   // Kurdish
+    'ur',   // Urdu
+    'yi',   // Yiddish
+    'dv',   // Divehi (Thaana)
+    'syc',  // Classical Syriac
+    'sam',  // Samaritan
+    'mid',  // Mandaic
+    'men',  // Mende Kikakui
+    'nqo',  // N'Ko
+    'gar',  // Garay
+    'rhg',  // Rohingya
+    'hzd',  // Hértevin
+);
+
+// right to left languages without comments
+$rtl_languages = ['ar','he','ps','fa','ku','ur','yi','dv','syc','sam','mid','men','nqo','gar','rhg','hzd'];
+
+
+
+
+// left to right languages
+$ltr_languages = [
+	'aa',   // Afar
+	'af',   // Afrikaans
+	'ak',   // Akan
+	'an',   // Aragonese
+	'as',   // Assamese
+	'av',   // Avaric
+	'ay',   // Aymara
+	'az',   // Azerbaijani
+	'ba',   // Bashkir
+	'be',   // Belarusian
+	'bg',   // Bulgarian
+	'bh',   // Bihari
+	'bi',   // Bislama
+	'bm',   // Bambara
+	'bn',   // Bengali
+	'bo',   // Tibetan
+	'br',   // Breton
+	'bs',   // Bosnian
+	'ca',   // Catalan
+	'ce',   // Chechen
+	'ch',   // Chamorro
+	'co',   // Corsican
+	'cr',   // Cree
+	'cs',   // Czech
+	'cu',   // Old Church Slavonic / Old Bulgarian
+	'cv',   // Chuvash
+	'cy',   // Welsh
+	'da',   // Danish
+	'de',   // German
+	'dv',   // Dhivehi / Divehi / Maldivian
+	'dz',   // Dzongkha
+	'ee',   // Ewe
+	'el',   // Greek
+	'en',   // English
+	'eo',   // Esperanto
+	'es',   // Spanish
+	'et',   // Estonian
+	'eu',   // Basque
+	'fa',   // Persian (Farsi)
+	'ff',   // Fulah
+	'fi',   // Finnish
+	'fj',   // Fijian
+	'fo',   // Faroese
+	'fr',   // French
+	'fy',   // Western Frisian
+	'ga',   // Irish
+	'gd',   // Scottish Gaelic
+	'gl',   // Galician
+	'gn',   // Guarani
+	'gu',   // Gujarati
+	'gv',   // Manx
+	'ha',   // Hausa
+	'he',   // Hebrew
+	'hi',   // Hindi
+	'ho',   // Hiri Motu
+	'hr',   // Croatian
+	'ht',   //Haitian; Haitian Creole
+	'hu',   // Hungarian
+	'is',   // Icelandic
+	'ig',   // Igbo
+	'id',   // Indonesian
+	'ia',   // Interlingua
+	'ie',   // Interlingue
+	'iu',   // Inuktitut
+	'ik',   // Inupiaq
+	'ga',   // Irish
+	'it',   // Italian
+	'ja',   // Japanese
+	'jv',   // Javanese
+	'kl',   // Kalaallisut
+	'kn',   // Kannada
+	'kr',   // Kanuri
+	'ks',   // Kashmiri
+	'kk',   // Kazakh
+	'km',   // Khmer
+	'ki',   // Kikuyu
+	'rw',   // Kinyarwanda
+	'ky',   // Kirghiz
+	'rn',   // Kirundi
+	'kv',   // Komi
+	'kg',   // Kongo
+	'ko',   // Korean
+	'ku',   // Kurdish
+	'kj',   // Kwanyama
+	'lo',   // Lao
+	'la',   // Latin
+	'lv',   // Latvian
+	'li',   // Limburgish
+	'ln',   // Lingala
+	'lt',   // Lithuanian
+	'lu',   // Luba-Katanga
+	'lb',   // Luxembourgish
+	'mk',   // Macedonian
+	'mg',   // Malagasy
+	'ms',   // Malay
+	'ml',   // Malayalam
+	'mt',   // Maltese
+	'gv',   // Manx
+	'mi',   // Maori
+	'mr',   // Marathi
+	'mh',   // Marshallese
+	'mn',   // Mongolian
+	'na',   // Nauru
+	'nv',   // Navajo
+	'nd',   // Ndebele, North
+	'nr',   // Ndebele, South
+	'ng',   // Ndonga
+	'ne',   // Nepali
+	'se',   // Northern Sami
+	'no',   // Norwegian
+	'nb',   // Norwegian Bokmål
+	'nn',   // Norwegian Nynorsk
+	'ny',   // Nyanja
+	'oc',   // Occitan
+	'oj',   // Ojibwa
+	'or',   // Oriya
+	'om',   // Oromo
+	'os',   // Ossetian
+	'pi',   // Pali
+	'pa',   // Panjabi
+	'fa',   // Persian
+	'pl',   // Polish
+	'pt',   // Portuguese
+	'ps',   // Pushto
+	'qu',   // Quechua
+	'ro',   // Romanian
+	'rm',   // Romansh
+	'ru',   // Russian
+	'sm',   // Samoan
+	'sg',   // Sango
+	'sa',   // Sanskrit
+	'sc',   // Sardinian
+	'sr',   // Serbian
+	'sn',   // Shona
+	'sd',   // Sindhi
+	'si',   // Sinhalese
+	'sk',   // Slovak
+	'sl',   // Slovenian
+	'so',   // Somali
+	'st',   // Sotho, Southern
+	'es',   // Spanish
+	'su',   // Sundanese
+	'sw',   // Swahili
+	'ss',   // Swati
+	'sv',   // Swedish
+	'tl',   // Tagalog
+	'ty',   // Tahitian
+	'tg',   // Tajik
+	'ta',   // Tamil
+	'tt',   // Tatar
+	'te',   // Telugu
+	'th',   // Thai
+	'bo',   // Tibetan
+	'ti',   // Tigrinya
+	'to',   // Tonga (Tonga Islands)
+	'ts',   // Tsonga
+	'tn',   // Tswana
+	'tr',   // Turkish
+	'tk',   // Turkmen
+	'tw',   // Twi
+	'ug',   // Uighur
+	'uk',   // Ukrainian
+	'ur',   // Urdu
+	'uz',   // Uzbek
+	've',   // Venda
+	'vi',   // Vietnamese
+	'vo',   // Volapük
+	'wa',   // Walloon
+	'cy',   // Welsh
+	'fy',   // Western Frisian
+	'wo',   // Wolof
+	'xh',   // Xhosa
+	'yi',   // Yiddish
+	'yo',   // Yoruba
+	'za',   // Zhuang
+	'zu'    // Zulu
+];
+
+// left to right languages without comments
+$ltr_languages = ['aa','af','ak','an','as','av','ay','az','ba','be','bg','bh','bi','bm','bn','bo','br','bs','ca','ce','ch','co','cr','cs','cu','cv','cy','da','de','dv','dz','ee','el','en','eo','es','et','eu','fa','ff','fi','fj','fo','fr','fy','ga','gd','gl','gn','gu','gv','ha','he','hi','ho','hr','ht', //Haitian; Haitian Creole'hu','is','ig','id','ia','ie','iu','ik','ga','it','ja','jv','kl','kn','kr','ks','kk','km','ki','rw','ky','rn','kv','kg','ko','ku','kj','lo','la','lv','li','ln','lt','lu','lb','mk','mg','ms','ml','mt','gv','mi','mr','mh','mn','na','nv','nd','nr','ng','ne','se','no','nb','nn','ny','oc','oj','or','om','os','pi','pa','fa','pl','pt','ps','qu','ro','rm','ru','sm','sg','sa','sc','sr','sn','sd','si','sk','sl','so','st','es','su','sw','ss','sv','tl','ty','tg','ta','tt','te','th','bo','ti','to','ts','tn','tr','tk','tw','ug','uk','ur','uz','ve','vi','vo','wa','cy','fy','wo','xh','yi','yo','za','zu' ];
+
+
+// ancient languages
+$ancient_languages = [
+	'akk',    // Akkadian
+	'avst',   // Avestan
+	'bali',   // Balinese
+	'bamu',   // Bamum
+	'batk',   // Batak
+	'brah',   // Brahmi
+	'bugi',   // Buginese
+	'buhd',   // Buhid
+	'cans',   // Unified Canadian Aboriginal Syllabics
+	'cari',   // Carian
+	'cham',   // Cham
+	'cprt',   // Cypriot syllabary
+	'dsrt',   // Deseret (Mormon)
+	'egyp',   // Egyptian (Ancient)
+	'elba',   // Elbasan
+	'ethi',   // Ge'ez (Classical Ethiopic)
+	'geok',   // Khutsuri (Asomtavruli and Nuskhuri)
+	'glag',   // Glagolitic
+	'gonm',   // Masaram Gondi
+	'goth',   // Gothic
+	'gran',   // Grantha
+	'gujr',   // Gujarati (Mahajani)
+	'guru',   // Gurmukhi (Modi)
+	'hang',   // Hangul (Old Korean)
+	'hani',   // Han (Hanzi, Kanji, Hanja)
+	'hano',   // Hanunoo (Hanunóo)
+	'hatr',   // Hatran
+	'hebr',   // Hebrew (Ancient)
+	'hluw',   // Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)
+	'hung',   // Old Hungarian
+	'inds',   // Indus (Harappan)
+	'java',   // Javanese (Kawi)
+	'kaithi', // Kaithi
+	'kali',   // Kayah Li
+	'khar',   // Kharosthi
+	'khmr',   // Khmer (Ancient)
+	'khoj',   // Khojki
+	'kitl',   // Khitan large script (Liao)
+	'kore',   // Korean (Ancient)
+	'kpel',   // Kpelle (Loma)
+	'kthi',   // Kaithi
+	'lana',   // Tai Tham (Lanna)
+	'laoo',   // Lao (Ancient)
+	'latf',   // Latin (Fraktur variant)
+	'latg',   // Latin (Gaelic variant)
+	'lepc',   // Lepcha (Róng)
+	'limb',   // Limbu
+	'lina',   // Linear A
+	'linb',   // Linear B
+	'lisu',   // Lisu (Fraser)
+	'lyci',   // Lycian
+	'lydi',   // Lydian
+	'mahj',   // Mahajani
+	'mymr',   // Myanmar (Burmese)
+	'nkdb',   // Naxi Dongba
+	'ogam',   // Ogham
+	'phli',   // Pahlavi (Inscriptional)
+	'phlp',   // Pahlavi (Psalter)
+	'phlv',   // Pahlavi (Book)
+	'prti',   // Parthian (Inscriptional)
+	'runr',   // Runic
+];
+
